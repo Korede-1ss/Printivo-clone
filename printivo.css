@@ -1,0 +1,61 @@
+.navbar {
+  background-color: black;
+}
+* {
+  margin: 0px;
+}
+.navbar {
+  background-color: #ece8d9;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.hero-search::placeholder {
+  font-size: 1rem;
+  color: #bcc6d0 !important;
+  letter-spacing: 0.3px;
+}
+.hero-image {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+  max-height: 600px;
+  width: auto;
+}
+
+.im {
+  height: 220px;
+  width: 100%;
+  display: block;
+}
+h5 {
+  color: #1e2a4a;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.02rem;
+}
+.tt {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: #8a94a6;
+}
+.new {
+  color: #1e2a4a;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.prt {
+  color: #9aa3b2;
+  font-size: 0.9rem;
+}
+.btn.button {
+  border: none;
+  background-color: #d98a8a;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
