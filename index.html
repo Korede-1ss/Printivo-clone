@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Printivo</title>
 
-    <link rel="stylesheet" href="/printivo.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -21,6 +20,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
     />
+    <!-- your CSS loads AFTER Bootstrap so it wins -->
+    <link rel="stylesheet" href="printivo.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">
@@ -69,7 +70,6 @@
             <a href="#" class="text-dark"><i class="bi bi-cart"></i></a>
           </div>
         </div>
-        <!-- NEW: wrapper div ends here -->
       </div>
     </nav>
 
@@ -80,7 +80,6 @@
     >
       <div class="container">
         <div class="py-3 row align-items-center">
-          <!-- Left: text + search -->
           <div class="col-12 col-md-7 col-lg-6">
             <h1
               class="display-3 fw-bold"
@@ -115,7 +114,6 @@
             </div>
           </div>
 
-          <!-- Right: image (hidden on phone, shown from tablet up) -->
           <div class="col-md-5 col-lg-6 d-none d-md-block">
             <img
               src="https://res.cloudinary.com/dmwfd0zhh/image/upload/q_auto,f_auto/v1623764552/printivo/Card3_n9kqin.png"
@@ -126,195 +124,216 @@
         </div>
       </div>
     </section>
+
+    <!-- ===== POPULAR PRODUCTS ===== -->
     <section class="container">
       <div
-        class="container d-flex align-items-center justify-content-between justify-items-center py-5"
+        class="container d-flex align-items-center justify-content-between py-5"
       >
         <div><h3>Popular Products</h3></div>
         <div>
-          <p><a href="">View all products</a></p>
+          <p>
+            <a style="text-decoration: none; color: #d98a8a" href="#"
+              >View all products</a
+            >
+          </p>
         </div>
       </div>
+
       <div class="row g-4">
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="card">
-            <img
-              class="im"
-              src="https://printivo.s3-us-west-2.amazonaws.com/files/category_thumbnails/1778857715_Tolani-Babalola.jpg"
-              alt=""
-            />
-            <div class="card-body">
+          <div class="card h-100">
+            <div class="img-wrap">
+              <img
+                class="im"
+                src="https://printivo.s3-us-west-2.amazonaws.com/files/category_thumbnails/1778857715_Tolani-Babalola.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card-body d-flex flex-column">
               <h5><b>Two Sided Business Class</b></h5>
               <p class="tt py-3">STARTING AT</p>
               <div class="d-flex align-items-center gap-2 new">
                 <p>₦15,000</p>
                 <p class="prt">per 100</p>
               </div>
-              <a href="#" class="btn button mt-auto" style="background-color: #d98a8a">
+              <a href="#" class="btn button mt-auto">
                 Browse Business Cards <i class="bi bi-chevron-right"></i>
               </a>
             </div>
           </div>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="card">
-            <img
-              class="im"
-              src="https://printivo.s3-us-west-2.amazonaws.com/files/category_thumbnails/1778857715_Tolani-Babalola.jpg"
-              alt=""
-            />
-            <div class="card-body">
+          <div class="card h-100">
+            <div class="img-wrap">
+              <img
+                class="im"
+                src="https://printivo.s3-us-west-2.amazonaws.com/files/category_thumbnails/1656003107_social-media--15.png"
+                alt=""
+              />
+            </div>
+            <div class="card-body d-flex flex-column">
               <h5><b>Two Sided Business Class</b></h5>
               <p class="tt py-3">STARTING AT</p>
               <div class="d-flex align-items-center gap-2 new">
                 <p>₦15,000</p>
                 <p class="prt">per 100</p>
               </div>
-              <a
-                href="#"
-                class="btn button mt-auto  bbb"
-                style="background-color: #d98a8a"
-              >
+              <a href="#" class="btn button mt-auto">
                 Browse Business Cards <i class="bi bi-chevron-right"></i>
               </a>
             </div>
           </div>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="card">
-            <img
-              class="im"
-              src="https://printivo.s3-us-west-2.amazonaws.com/files/category_thumbnails/1778857715_Tolani-Babalola.jpg"
-              alt=""
-            />
-            <div class="card-body">
+          <div class="card h-100">
+            <div class="img-wrap">
+              <img
+                class="im"
+                src="https://printivo.s3-us-west-2.amazonaws.com/files/category_thumbnails/1661456358_social-media--16.png"
+                alt=""
+              />
+            </div>
+            <div class="card-body d-flex flex-column">
               <h5><b>Two Sided Business Class</b></h5>
               <p class="tt py-3">STARTING AT</p>
               <div class="d-flex align-items-center gap-2 new">
                 <p>₦15,000</p>
                 <p class="prt">per 100</p>
               </div>
-              <a href="#" class="btn button mt-auto" style="background-color: #d98a8a" >
+              <a href="#" class="btn button mt-auto">
                 Browse Business Cards <i class="bi bi-chevron-right"></i>
               </a>
             </div>
           </div>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="card">
-            <img
-              class="im"
-              src="https://printivo.s3-us-west-2.amazonaws.com/files/category_thumbnails/1778857715_Tolani-Babalola.jpg"
-              alt=""
-            />
-            <div class="card-body">
+          <div class="card h-100">
+            <div class="img-wrap">
+              <img
+                class="im"
+                src="https://printivo.s3-us-west-2.amazonaws.com/files/category_thumbnails/1439790190_postcard.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card-body d-flex flex-column">
               <h5><b>Two Sided Business Class</b></h5>
               <p class="tt py-3">STARTING AT</p>
               <div class="d-flex align-items-center gap-2 new">
                 <p>₦15,000</p>
                 <p class="prt">per 100</p>
               </div>
-              <a href="#" class="btn button mt-auto" style="background-color: #d98a8a" >
+              <a href="#" class="btn button mt-auto">
                 Browse Business Cards <i class="bi bi-chevron-right"></i>
               </a>
             </div>
           </div>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="card">
-            <img
-              class="im"
-              src="https://printivo.s3-us-west-2.amazonaws.com/files/category_thumbnails/1778857715_Tolani-Babalola.jpg"
-              alt=""
-            />
-            <div class="card-body">
+          <div class="card h-100">
+            <div class="img-wrap">
+              <img
+                class="im"
+                src="https://printivo.s3-us-west-2.amazonaws.com/files/category_thumbnails/1446183154_big%20rollup%20banner.png"
+                alt=""
+              />
+            </div>
+            <div class="card-body d-flex flex-column">
               <h5><b>Two Sided Business Class</b></h5>
               <p class="tt py-3">STARTING AT</p>
               <div class="d-flex align-items-center gap-2 new">
                 <p>₦15,000</p>
                 <p class="prt">per 100</p>
               </div>
-              <a href="#" class="btn button mt-auto" style="background-color: #d98a8a" >
+              <a href="#" class="btn button mt-auto">
                 Browse Business Cards <i class="bi bi-chevron-right"></i>
               </a>
             </div>
           </div>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="card">
-            <img
-              class="im"
-              src="https://printivo.s3-us-west-2.amazonaws.com/files/category_thumbnails/1778857715_Tolani-Babalola.jpg"
-              alt=""
-            />
-            <div class="card-body">
+          <div class="card h-100">
+            <div class="img-wrap">
+              <img
+                class="im"
+                src="https://printivo.s3-us-west-2.amazonaws.com/files/category_thumbnails/1775484810_IMG-20260406-WA0011.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card-body d-flex flex-column">
               <h5><b>Two Sided Business Class</b></h5>
               <p class="tt py-3">STARTING AT</p>
               <div class="d-flex align-items-center gap-2 new">
                 <p>₦15,000</p>
                 <p class="prt">per 100</p>
               </div>
-              <a href="#" class="btn button mt-auto" style="background-color: #d98a8a" >
+              <a href="#" class="btn button mt-auto">
                 Browse Business Cards <i class="bi bi-chevron-right"></i>
               </a>
             </div>
           </div>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="card">
-            <img
-              class="im"
-              src="https://printivo.s3-us-west-2.amazonaws.com/files/category_thumbnails/1778857715_Tolani-Babalola.jpg"
-              alt=""
-            />
-            <div class="card-body">
+          <div class="card h-100">
+            <div class="img-wrap">
+              <img
+                class="im"
+                src="https://printivo.s3-us-west-2.amazonaws.com/files/category_thumbnails/1473167305_trifold-brochure-printing.png"
+                alt=""
+              />
+            </div>
+            <div class="card-body d-flex flex-column">
               <h5><b>Two Sided Business Class</b></h5>
               <p class="tt py-3">STARTING AT</p>
               <div class="d-flex align-items-center gap-2 new">
                 <p>₦15,000</p>
                 <p class="prt">per 100</p>
               </div>
-              <a href="#" class="btn button mt-auto" style="background-color: #d98a8a" >
+              <a href="#" class="btn button mt-auto">
                 Browse Business Cards <i class="bi bi-chevron-right"></i>
               </a>
             </div>
           </div>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="card">
-            <img
-              class="im"
-              src="https://printivo.s3-us-west-2.amazonaws.com/files/category_thumbnails/1778857715_Tolani-Babalola.jpg"
-              alt=""
-            />
-            <div class="card-body">
+          <div class="card h-100">
+            <div class="img-wrap">
+              <img
+                class="im"
+                src="https://printivo.s3-us-west-2.amazonaws.com/files/category_thumbnails/1456215784_12.png"
+                alt=""
+              />
+            </div>
+            <div class="card-body d-flex flex-column">
               <h5><b>Two Sided Business Class</b></h5>
               <p class="tt py-3">STARTING AT</p>
               <div class="d-flex align-items-center gap-2 new">
                 <p>₦15,000</p>
                 <p class="prt">per 100</p>
               </div>
-              <a href="#" class="btn button mt-auto" style="background-color: #d98a8a" >
+              <a href="#" class="btn button mt-auto">
                 Browse Business Cards <i class="bi bi-chevron-right"></i>
               </a>
             </div>
           </div>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="card">
-            <img
-              class="im"
-              src="https://printivo.s3-us-west-2.amazonaws.com/files/category_thumbnails/1778857715_Tolani-Babalola.jpg"
-              alt=""
-            />
-            <div class="card-body>
+          <div class="card h-100">
+            <div class="img-wrap">
+              <img
+                class="im"
+                src="https://printivo.s3-us-west-2.amazonaws.com/files/category_thumbnails/1485151940_White-tshirt.png"
+                alt=""
+              />
+            </div>
+            <div class="card-body d-flex flex-column">
               <h5><b>Two Sided Business Class</b></h5>
               <p class="tt py-3">STARTING AT</p>
               <div class="d-flex align-items-center gap-2 new">
                 <p>₦15,000</p>
                 <p class="prt">per 100</p>
               </div>
-              <a href="#" class="btn button mt-auto" style="background-color: #d98a8a" >
+              <a href="#" class="btn button mt-auto">
                 Browse Business Cards <i class="bi bi-chevron-right"></i>
               </a>
             </div>
