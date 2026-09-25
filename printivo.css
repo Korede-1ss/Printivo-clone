@@ -79,3 +79,19 @@ h5 {
   max-width: 100%;
   height: auto;
 }
+.vb {
+  /* background-color: #1e2a4a; */
+  display: inline-block;
+  transition: all 0.1s ease 0s;
+}
+
+.btn.button:hover .vb {
+  /* margin-left: 10px; */
+  /* padding-left: 2px; */
+  /* margin-right: 20px; */
+
+  transform: translate(15px, 0px);
+}
+.be {
+  height: 250px;
+}
